@@ -80,8 +80,8 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 - C# data types (such as string and int) are actually made available through classes in the .NET Class Library.
 
 ## Stateful versus stateless methods
-- Stateless methods are implemented so that they can work without referencing or changing any values already stored in memory. Stateless methods are also known as static methods.
-- Stateful (instance) methods keep track of their state in fields, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
+- **Stateless** methods are implemented so that they can work without referencing or changing any values already stored in memory. Stateless methods are also known as static methods.
+- **Stateful** (instance) methods keep track of their state in fields, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
 - However, when you need to call stateful methods, you must first create an instance of the class so that the method can access state.
 
 ## Methods
