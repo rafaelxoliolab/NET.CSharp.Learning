@@ -8,7 +8,8 @@ namespace NET.CSharp.Learning.Basics
 {
     internal class Strings
     {
-        void StringFormatInterpolation() {
+        void StringFormatInterpolation()
+        {
             int invoiceNumber = 1201;
             decimal productShares = 25.4568m;
             decimal subtotal = 2750.00m;
@@ -22,7 +23,8 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine($"     Total Billed: {total:C}");
         }
 
-        void StringFormatUsingInterpolation() {
+        void StringFormatUsingInterpolation()
+        {
             string customerName = "Ms. Barros";
 
             string currentProduct = "Magic Yield";
@@ -55,7 +57,8 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine(comparisonMessage);
         }
 
-        void StringIndexOfAny() {
+        void StringIndexOfAny()
+        {
             char[] chars = { 'a', 'e', 'i', 'o', 'u', 'y',
                        'A', 'E', 'I', 'O', 'U', 'Y' };
             String s = "The long and winding road...";
@@ -85,6 +88,18 @@ namespace NET.CSharp.Learning.Basics
             return result;
         }
 
+        string ReverseSentenceUsingArray(string input)
+        {
+            string[] words = input.Split(" ");
+            Array.Reverse(words);
+            return string.Join(" ", words);
+        }
 
+        string ReverseWordUsingArray(string word)
+        {
+            char[] charArray = word.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
     }
 }

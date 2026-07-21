@@ -24,16 +24,16 @@ namespace NET.CSharp.Learning.Basics
         /*
          Use the Random class to generate a value.
 
-Consider the range of numbers that is required.
+        Consider the range of numbers that is required.
 
-Based on the value generated, use the conditional operator to display either heads or tails.
+        Based on the value generated, use the conditional operator to display either heads or tails.
 
-There should be a 50% chance that the result is either heads or tails.
+        There should be a 50% chance that the result is either heads or tails.
 
-Your code should be easy to read, but with as few lines as possible.
+        Your code should be easy to read, but with as few lines as possible.
 
-You should be able to accomplish the desired result in three lines of code.
-         */
+        You should be able to accomplish the desired result in three lines of code.
+        */
         void validateRandomWithConditionaOperator() {
             Random coin = new Random();
             int flip = coin.Next(0, 2);

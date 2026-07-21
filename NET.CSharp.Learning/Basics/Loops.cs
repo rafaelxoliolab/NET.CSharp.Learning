@@ -85,7 +85,8 @@ namespace NET.CSharp.Learning.Basics
             } while (validEntry == false);
         }
 
-        void validInteger() {
+        void validInteger()
+        {
             string? readResult;
             string valueEntered = "";
             int numValue = 0;
@@ -122,7 +123,8 @@ namespace NET.CSharp.Learning.Basics
             readResult = Console.ReadLine();
         }
 
-        void validText() {
+        void validText()
+        {
             string? readResult;
             string roleName = "";
             bool validEntry = false;
@@ -151,7 +153,8 @@ namespace NET.CSharp.Learning.Basics
             readResult = Console.ReadLine();
         }
 
-        void validDisplaySubstrings() {
+        void validDisplaySubstrings()
+        {
             string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
             int stringsCount = myStrings.Length;
 
@@ -260,17 +263,18 @@ Build a loop for entering new ourAnimals array data (menu option 2 - part 1).
 Write code to read and save new ourAnimals array data (menu option 2 - part 2).
 You'll test your application at each stage of the development process.
              */
-            void petSample() {
+            void petSample()
+            {
                 string[][] jaggedArray = new string[][]
     {
-    new string[] { "one1", "two1", "three1", "four1", "five1", "six1" },
-    new string[] { "one2", "two2", "three2", "four2", "five2", "six2" },
-    new string[] { "one3", "two3", "three3", "four3", "five3", "six3" },
-    new string[] { "one4", "two4", "three4", "four4", "five4", "six4" },
-    new string[] { "one5", "two5", "three5", "four5", "five5", "six5" },
-    new string[] { "one6", "two6", "three6", "four6", "five6", "six6" },
-    new string[] { "one7", "two7", "three7", "four7", "five7", "six7" },
-    new string[] { "one8", "two8", "three8", "four8", "five8", "six8" }
+        new string[] { "one1", "two1", "three1", "four1", "five1", "six1" },
+        new string[] { "one2", "two2", "three2", "four2", "five2", "six2" },
+        new string[] { "one3", "two3", "three3", "four3", "five3", "six3" },
+        new string[] { "one4", "two4", "three4", "four4", "five4", "six4" },
+        new string[] { "one5", "two5", "three5", "four5", "five5", "six5" },
+        new string[] { "one6", "two6", "three6", "four6", "five6", "six6" },
+        new string[] { "one7", "two7", "three7", "four7", "five7", "six7" },
+        new string[] { "one8", "two8", "three8", "four8", "five8", "six8" }
     };
 
                 foreach (string[] array in jaggedArray)
